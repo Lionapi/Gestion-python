@@ -1,0 +1,81 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>98a79da5-9d95-410e-a151-506d64934cd6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Products_pyqt5.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>gestionpy</Name>
+    <RootNamespace>gestionpy</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="gestionpy.py" />
+    <Compile Include="Products_flask.py" />
+    <Compile Include="Products_pyqt5.py" />
+    <Compile Include="Products_tkinter.py" />
+    <Compile Include="Setup.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="auproduct.ui" />
+    <Content Include="ma.ico" />
+    <Content Include="ma.jpg" />
+    <Content Include="product.ui" />
+    <Content Include="Splash.png" />
+    <Content Include="static\css\materialize.css" />
+    <Content Include="static\fonts\roboto\Roboto-Bold.eot" />
+    <Content Include="static\fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="static\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Light.eot" />
+    <Content Include="static\fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="static\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Medium.eot" />
+    <Content Include="static\fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="static\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Regular.eot" />
+    <Content Include="static\fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="static\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Thin.eot" />
+    <Content Include="static\fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="static\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="static\js\angular.js" />
+    <Content Include="static\js\jquery.js" />
+    <Content Include="static\js\materialize.js" />
+    <Content Include="templates\index_flask.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="static\" />
+    <Folder Include="static\css\" />
+    <Folder Include="static\fonts\roboto\" />
+    <Folder Include="static\js\" />
+    <Folder Include="static\fonts\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
