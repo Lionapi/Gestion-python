@@ -9,7 +9,7 @@ import datetime
 import time
 
 def DBconnection():
-    con, h, u, p, bd = "", "localhost", "Franck-Lionel", "Franck-Lionel007", "appgestcom"
+    con, h, u, p, bd = "", "localhost", "user", "password", "appgestcom"
 
     try:
         con = pymysql.connect(host = h, user = u, password = p, db = bd)
